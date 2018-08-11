@@ -1,0 +1,249 @@
+//Variables
+PImage imagen;
+int ancho = 664;
+int alto = 664;
+//Setup
+void setup(){
+  size(700,406);
+  background(#C43F2E);
+  imagen = loadImage("fondo.png");
+  
+}//Cierre de Setup
+//Draw
+void draw(){
+  //image(imagen,0,0,700,406);
+  noStroke();
+  
+  //Mitad derecha
+  
+  fill(94,168,50);
+  ellipse(350,203,676,676);
+  fill(203,207,83);
+  ellipse(350,203,656,656);
+  fill(41,134,105);
+  arc(350, 203, 504, 504, 0, HALF_PI);
+  fill(127,186,93);
+  arc(350, 203, 408, 408, 0, HALF_PI);
+  fill(206,207,75);
+  arc(350, 203, 344, 344, 0, HALF_PI);
+  fill(191,165,57);
+  arc(350, 203, 272, 272, 0, HALF_PI);
+  fill(178,188,191);
+  arc(350, 203, 202, 202, 0, HALF_PI);
+  fill(155,162,150);
+  arc(350, 203, 154, 154, 0, HALF_PI);
+
+  
+  fill(219,109,47);
+  arc(350, 203, 504, 504, PI+HALF_PI, TWO_PI);
+  fill(206,169,171);
+  arc(350, 203, 408, 408, PI+HALF_PI, TWO_PI);
+  fill(122,173,81);
+  arc(350, 203, 344, 344, PI+HALF_PI, TWO_PI);
+  fill(203,208,80);
+  arc(350, 203, 272, 272, PI+HALF_PI, TWO_PI);
+  fill(161,181,186);
+  arc(350, 203, 202, 202, PI+HALF_PI, TWO_PI);
+  
+  
+  
+  fill(95,138,181);
+  arc(350, 203, 504, 504, PI+HALF_PI, TWO_PI-QUARTER_PI);
+  fill(91,166,147);
+  arc(350, 203, 408, 408, PI+HALF_PI, TWO_PI-QUARTER_PI);
+  fill(215,196,75);
+  arc(350, 203, 344, 344, PI+HALF_PI, TWO_PI-QUARTER_PI);
+  fill(203,208,82);
+  arc(350, 203, 272, 272, PI+HALF_PI, TWO_PI-QUARTER_PI);
+  fill(214,162,130);
+  arc(350, 203, 202, 202, PI+HALF_PI, TWO_PI-QUARTER_PI);
+  fill(204,211,211);
+  arc(350, 203, 154, 154, PI+HALF_PI, TWO_PI);
+  fill(42,140,99);
+  ellipse(350,203,108,108);
+  fill(204,190,189);
+  ellipse(341,210,86,94);
+  fill(197,186,158);
+  ellipse(341,212,67,90);
+  fill(189,96,81);
+  ellipse(350, 159,27,27);
+  
+  
+  //Mitad izquierda
+  //Abajo
+  fill(94,168,50);
+  arc(350,203,900,900, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(191,178,157);
+  arc(350,203,676,676, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(202,181,174);
+  arc(350,203,656,656, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(194,181,157);
+  arc(350,203,646,646, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(203,97,49);
+  arc(350,203,516,516, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(205,205,78);
+  arc(350,203,504,504, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(98,13,19);
+  arc(350,203,408,408, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(212,45,36);
+  arc(350,203,344,344, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(213,199,158);
+  arc(350,203,272,272, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(191,179,153);
+  arc(350,203,202,202, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(183,204,78);
+  arc(350,203,154,154, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(222,64,48);
+  arc(350,203,108,108, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(198,186,160);
+  arc(350,203,70,70, HALF_PI, PI-(QUARTER_PI/1.5));
+  fill(196,184,158);
+  arc(350,203,50,50, HALF_PI, PI-(QUARTER_PI/1.5));
+  
+  //Mitad
+  fill(36,60,142);
+  arc(350,203,900,900, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  
+  fill(0,0,0);
+  arc(350,203,676,676, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(188,192,113);
+  arc(350,203,656,656, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(40,129,99);
+  arc(350,203,646,646, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(189,202,78);
+  arc(350,203,516,516, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(135,164,180);
+  arc(350,203,504,504, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(193,182,157);
+  arc(350,203,408,408, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(116,182,101);
+  arc(350,203,344,344, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(205,205,74);
+  arc(350,203,272,272, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(191,179,153);
+  arc(350,203,202,202, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(179,185,190);
+  arc(350,203,154,154, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(156,186,196);
+  arc(350,203,108,108, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(205,203,75);
+  arc(350,203,70,70, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+  fill(196,184,158);
+  arc(350,203,50,50, PI-(QUARTER_PI/1.5), PI+(QUARTER_PI/1.5));
+ 
+  
+  //Arriba
+  fill(13,92,68);
+  arc(350,203,900,900, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(61,128,177);
+  arc(350,203,676,676, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(197,181,159);
+  arc(350,203,656,656, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(37,60,46);
+  arc(350,203,646,646, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(189,202,78);
+  arc(350,203,516,516, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(16,94,141);
+  arc(350,203,504,504, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(190,57,39);
+  arc(350,203,408,408, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(206,207,76);
+  arc(350,203,344,344, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(219,150,93);
+  arc(350,203,272,272, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(201,206,102);
+  arc(350,203,202,202, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(41,49,38);
+  arc(350,203,154,154, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(150,188,199);
+  arc(350,203,108,108, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(225,133,60);
+  arc(350,203,70,70, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  fill(193,182,153);
+  arc(350,203,50,50, PI+(QUARTER_PI/1.5), PI+HALF_PI);
+  
+  fill(9,114,162);
+  arc(350, 119, 34, 34, HALF_PI, PI+HALF_PI, CHORD);
+  fill(0,0,0);
+  arc(350, 203, 30, 30, HALF_PI, PI+HALF_PI, CHORD);
+  fill(54,137,95);
+  arc(350, 232, 21, 30, HALF_PI, PI+HALF_PI, CHORD);
+  
+  //CIRCULOS
+  fill(164,178,101);
+  ellipse(147,193,96,96);
+  fill(204,202,200);
+  ellipse(147,193,86,86);
+  fill(205,208,138);
+  ellipse(147,193,68,68);
+  fill(119,169,191);
+  ellipse(147,193,52,52);
+  fill(177,45,34);
+  ellipse(147,193,32,32);
+  fill(44,103,71);
+  ellipse(147,193,8,8);
+  
+  fill(217,132,69);
+  ellipse(248,263,32,32);
+  fill(60,118,84);
+  ellipse(217,281,35,35);
+  fill(77,123,171);
+  ellipse(187,297,30,30);
+  fill(214,83,51);
+  ellipse(152,317,44,44);
+  fill(216,136,75);
+  ellipse(96,347,64,64);
+
+  fill(193,184,156);
+  ellipse(415,202,24,24);
+  ellipse(439,202,24,24);
+  ellipse(469,202,33,33);
+  ellipse(504,202,36,36);
+  fill(29,89,164);
+  ellipse(538,202,31,31);
+  fill(193,184,156);
+  arc(538, 202, 31, 31, 0, PI, CHORD);
+  fill(167,177,161);
+  ellipse(640,202,62,62);
+  fill(46,51,41);
+  ellipse(640,202,22,22);
+  fill(0,0,0);
+  ellipse(633,140,62,62);
+  fill(34,69,151);
+  arc(633, 140, 62, 62, 0, PI, CHORD);
+  fill(198,195,122);
+  ellipse(633,264,62,62);
+  fill(155,161,161);
+  arc(633, 264, 62, 62, 0, PI, CHORD);
+
+
+  
+  
+  fill(193,184,156);
+  ellipse(431,94,68,68);
+  fill(181,177,162);
+  arc(431, 94, 68, 68, HALF_PI, PI+HALF_PI, CHORD);
+  fill(193,184,156);
+  ellipse(402,327,68,68);
+  fill(181,177,162);
+  arc(402, 327, 68, 68, HALF_PI, PI+HALF_PI, CHORD);
+  ellipse(270,315,68,68);
+  fill(193,184,156);
+  arc(270, 315, 68, 68, HALF_PI, PI+HALF_PI, CHORD);
+  fill(181,177,162);
+  ellipse(255,95,68,68);
+  fill(193,184,156);
+  arc(255, 95, 68, 68, HALF_PI, PI+HALF_PI, CHORD);
+  
+  ellipse(216,128,32,32);
+  ellipse(185,112,30,30);
+  ellipse(152,89,46,46);
+  
+  ellipse(235,176,34,34);
+
+   ellipse(96,61,62,62);
+  
+  ellipse(264,186,23,23);
+  ellipse(285,195,20,20);
+
+}//Cierre de draw
